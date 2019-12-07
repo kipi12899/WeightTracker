@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:gravity="top"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/wlabel1"
+            android:text="Welcome"
+            android:padding="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:autoSizeTextType="uniform"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/wlabel2"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="15dp"
+            android:autoSizeTextType="uniform"
+            android:padding="15dp"
+            android:text="Weight Tracker is Where You Start Your Weight Loss Journey" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="300dp"
+            android:padding="50dp"
+            android:src="@drawable/scale_pic" />
+
+        <Button
+            android:id="@+id/startBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#5bc0de"
+            android:gravity="center|center_vertical"
+            android:text="Continue" />
+    </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

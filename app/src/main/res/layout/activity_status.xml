@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StatusActivity">
+
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:text="Current Status"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"/>
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:scaleY="8"
+
+            android:layout_height="wrap_content"
+            android:height="15dp"
+            android:padding="25dp" />
+        <LinearLayout
+            android:id="@+id/LinearLayout02"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true">
+            <TextView
+                android:id="@+id/cweight"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:autoSizeTextType="uniform"
+                android:padding="15dp"
+                android:gravity="center"
+                android:text="{Current Weight}" />
+            <TextView
+                android:id="@+id/percent"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+
+                android:autoSizeTextType="uniform"
+                android:padding="15dp"
+                android:gravity="center"
+                android:text="{Percent}" />
+            <TextView
+                android:id="@+id/gweight"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+
+                android:autoSizeTextType="uniform"
+                android:padding="15dp"
+                android:gravity="center"
+                android:layout_gravity="right"
+                android:text="{Goal Weight}" />
+
+        </LinearLayout>
+    <LinearLayout
+        android:id="@+id/LinearLayout03"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+
+            android:background="#5bc0de"
+
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="Record" />
+    </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

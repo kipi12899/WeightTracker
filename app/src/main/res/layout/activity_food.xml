@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FoodActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/toplabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:text="Healthy Foods"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+        android:id="@+id/LinearLayout01"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true">
+
+
+            <ImageView
+                android:id="@+id/imgView1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/food1" />
+
+            <TextView
+                android:id="@+id/name1"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/cardview_dark_background"
+                android:paddingLeft="10dp"
+                android:paddingBottom="25dp"
+                android:text="Avocado Pasta"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/name2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:paddingLeft="10dp"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="16dp"
+                android:text="Ingredients" />
+        <TextView
+            android:id="@+id/ing1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:paddingLeft="20dp"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="14dp"
+            android:text="12 ounces spaghetti, 2 ripe avocados, halved, seeded and peeled, 1/2 cup fresh basil leaves, 2 cloves garlic,
+2 tablespoons freshly squeezed lemon juice, Kosher salt and freshly ground black pepper, to taste,
+1/3 cup olive oil, 1 cup cherry tomatoes, halved, 1/2 cup canned corn kernels, drained and rinsed" />
+
+
+
+
+        <TextView
+            android:id="@+id/recoipe"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:paddingLeft="10dp"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="16dp"
+            android:text="Directions" />
+
+
+        <TextView
+            android:id="@+id/dirc1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:paddingLeft="20dp"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="14dp"
+            android:text="In a large pot of boiling salted water, cook pasta according to package instructions; drain well.
+To make the avocado sauce, combine avocados, basil, garlic and lemon juice in the bowl of a food processor; season with salt and pepper, to taste. With the motor running, add olive oil in a slow stream until emulsified; set aside.
+In a large bowl, combine pasta, avocado sauce, cherry tomatoes and corn.
+Serve immediately." />
+
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/imgView2"
+            android:layout_width="227dp"
+            android:layout_height="235dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/food2"
+            android:paddingTop="25dp"/>
+
+
+    </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
